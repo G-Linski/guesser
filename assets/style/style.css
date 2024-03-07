@@ -1,0 +1,237 @@
+@import url(./reset.css);
+@import url(./yang.css);
+
+
+:root{
+  --background-dark: #18171f;
+  --font-color:#ffffff;
+
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+
+}
+
+body {
+  background-color: var(--background-dark);
+  color:#ffffff;
+  font-family: 'Fira', sans-serif;
+  
+}
+
+main {
+  padding: 60px;
+}
+
+h2, p, li {
+  color: #ece1fa;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition:all 2s ease-in-out;
+  font-size: 40px;
+}
+
+button {
+  padding:12px 0;
+  width: 150px;
+  border-radius:6px;
+  background-color: rgb(77, 185, 185);
+  color:#ffffff;
+  font-weight: 600;
+}
+
+.center-area {
+  display:flex;
+  justify-content: center;
+}
+
+.play-area {
+  margin-top: 50px;
+}
+
+/*------------------------------------------*/
+/*              Header                      */
+/*------------------------------------------*/
+
+header {
+  background-color: #654ede;
+  color: #ffffff;
+  height: 60px;
+  display: flex;
+}
+
+h1 {
+  text-align: left;
+  line-height: 60px;
+  font-size: 32px;
+}
+
+nav ul {
+  gap: 20px;
+}
+
+nav ul li {
+  line-height: 60px;
+  list-style: none;
+}
+
+nav ul li a {
+  color:#ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: default;
+  transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #0f00ab;
+}
+
+.header-nav {
+  display: flex;
+  gap:30px;
+}
+
+.counter {
+  display: flex;
+  width: 100px;
+  height:100px;
+  background-color:red;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.guess-display {
+  width:120px;
+  background-color: #3c57ff;
+  font-size: 18px;
+  font-weight: 600;
+  height:48px;
+  border: 1px solid rgb(255 255 255/0.05);
+  background-color:rgb(255 255 255/0.05);
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 48px;
+}
+
+.guess-display p {
+  line-height: 48px;
+}
+
+
+/*------------------------------------------*/
+/*              Form                        */
+/*------------------------------------------*/
+
+form {
+  width:200px;
+  margin-top: 20px;
+}
+
+input{
+  height:48px;
+  border-radius:5px;
+  color:#ffffff;
+}
+
+input[type = text]{
+  width:120px;
+  height:48px;
+  border: 1px solid rgb(255 255 255/0.05);
+  background-color:rgb(255 255 255/0.05);
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+input + input{
+  margin-top: 15px;
+}
+
+input[type=button]{
+  width:120px;
+  background-color: #3c57ff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.output{
+  margin-top: 30px;
+  padding:0 15px;
+  width: 360px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: rgb(0 0 0 /0.2);
+}
+
+.output p{
+  font-size: 16px;
+  color:#ffffff;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+#rbuttons {
+  font:#ffffff;
+}
+
+/*------------------------------------------*/
+/*            Screen Mode                   */
+/*------------------------------------------*/
+
+
+.screen-mode{
+  position:absolute;
+  right: 10.5%;
+}
+
+.mode-button{
+  background-color: #efeef5;
+  width:200px;
+  color:#201f24;
+}
+
+
+
+/*------------------------------------------*/
+/*              Utility                     */
+/*------------------------------------------*/
+
+
+.space-around{
+  justify-content: space-around;
+}
+
+.space-evenly{
+  justify-content: space-evenly;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.flex{
+  display: flex;
+}
+
+.center{
+  align-content: center;
+}
+
+
+
+
